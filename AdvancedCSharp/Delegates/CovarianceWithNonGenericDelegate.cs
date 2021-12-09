@@ -8,8 +8,6 @@ namespace AdvancedCSharp.Delegates
 {
     public class CovarianceWithNonGenericDelegate : DelegateSample
     {
-      
-
         class Vehicle
         {
             public Vehicle CreateVehicle()
@@ -34,6 +32,8 @@ namespace AdvancedCSharp.Delegates
         {
             VehicleDelegate delegate_example = new VehicleDelegate(new Bus().CreateBus);
             delegate_example.Invoke();
+            VehicleDelegate delegate_example2 = new VehicleDelegate(new Vehicle().CreateVehicle);
+            delegate_example2.Invoke();
         }
     }
 }

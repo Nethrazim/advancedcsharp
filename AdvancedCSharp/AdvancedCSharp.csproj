@@ -43,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delegates\ContravarianceWithNonGenericDelegates.cs" />
     <Compile Include="Delegates\CovarianceWithNonGenericDelegate.cs" />
     <Compile Include="Delegates\DelegateSample.cs" />
     <Compile Include="Delegates\DelegateSample1.cs" />
+    <Compile Include="Events\EventSample1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
