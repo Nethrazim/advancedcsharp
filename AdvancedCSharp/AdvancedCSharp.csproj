@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delegates\CovarianceWithNonGenericDelegate.cs" />
     <Compile Include="Delegates\DelegateSample.cs" />
     <Compile Include="Delegates\DelegateSample1.cs" />
     <Compile Include="Program.cs" />
