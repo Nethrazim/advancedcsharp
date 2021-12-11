@@ -26,6 +26,8 @@ namespace AdvancedCSharp
         GenericSample3 ex12 = new GenericSample3();
         GenericSample4 ex13 = new GenericSample4();
         GenericSample5 ex14 = new GenericSample5();
+        GenericSample7 ex15 = new GenericSample7();
+        GenericsSample8 ex16 = new GenericsSample8();
         static void Main(string[] args)
         {
             new Program().RunSamples();
@@ -47,7 +49,9 @@ namespace AdvancedCSharp
             //ex11.Run();
             //ex12.Run();
             //ex13.Run();
-            ex14.Run();
+            //ex14.Run();
+            //ex15.Run();
+            ex16.Run();
         }
     }
 }

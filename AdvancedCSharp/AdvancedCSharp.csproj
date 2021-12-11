@@ -54,6 +54,9 @@
     <Compile Include="Generics\GenericSample1.cs" />
     <Compile Include="Generics\GenericSample4.cs" />
     <Compile Include="Generics\GenericSample5.cs" />
+    <Compile Include="Generics\GenericSample6.cs" />
+    <Compile Include="Generics\GenericSample7.cs" />
+    <Compile Include="Generics\GenericsSample8.cs" />
     <Compile Include="Lambda\LambdaSample1.cs" />
     <Compile Include="Lambda\LambdaSample2.cs" />
     <Compile Include="Lambda\LambdaSample3.cs" />
