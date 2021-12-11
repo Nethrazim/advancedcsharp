@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,17 @@
     <Compile Include="Delegates\DelegateSample.cs" />
     <Compile Include="Delegates\DelegateSample1.cs" />
     <Compile Include="Events\EventSample1.cs" />
+    <Compile Include="Generics\GenericSample3.cs" />
+    <Compile Include="Generics\GenericSample2.cs" />
+    <Compile Include="Generics\GenericSample1.cs" />
+    <Compile Include="Generics\GenericSample4.cs" />
+    <Compile Include="Generics\GenericSample5.cs" />
+    <Compile Include="Lambda\LambdaSample1.cs" />
+    <Compile Include="Lambda\LambdaSample2.cs" />
+    <Compile Include="Lambda\LambdaSample3.cs" />
+    <Compile Include="Lambda\LambdaSample4.cs" />
+    <Compile Include="Lambda\LambdaSample6.cs" />
+    <Compile Include="Lambda\LambdaSample5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
