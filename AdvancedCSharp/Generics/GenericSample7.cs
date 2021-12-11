@@ -6,12 +6,48 @@ using System.Threading.Tasks;
 
 namespace AdvancedCSharp.Generics
 {
-    //private class PrivateClass { } //FYI error, top level class cannot be private/protected
-    class GenericSample75 // by default this is internal , accessible to this assembly only
+    internal class GenericSample7
     {
-        private class P { } //FYI private class can only be internal and not top level class in the namespace
-        protected class P1 { } //FYI same to protected
-    
-        
+        class Vehicle { }
+        class Bus : Vehicle { }
+
+        delegate TResult CovDelegate<out TResult>();
+        delegate Bus ContraDelegate<in TResult>(TResult param);
+
+
+
+        public void Run()
+        {
+            Console.WriteLine("Covariance");
+            CovDelegate<Vehicle> covVehicle = new CovDelegate<Vehicle>(GetOneVehicle);
+            covVehicle += GetOneBus;
+            covVehicle();
+            
+            CovDelegate<Bus> covBus = GetOneBus;
+            covBus();
+
+            covVehicle = covBus;
+            covVehicle();
+
+            Console.WriteLine("ContraVariance");
+
+            ContraDelegate<Bus> contra2Vehicle = SetOneVehicle;
+            contra2Vehicle(new Bus());
+
+        }
+
+        private Bus SetOneVehicle(Vehicle vehicle) { return (Bus)vehicle; }
+        private Bus SetOneBus(Bus bus) { return bus; }
+        private Vehicle GetOneVehicle()
+        {
+            Console.WriteLine("Creating one vehicle and returning it.");
+            return new Vehicle();
+        }
+
+        private Bus GetOneBus()
+        {
+            Console.WriteLine("Creating one bus and returning it.");
+            return new Bus();
+        }
     }
 }
