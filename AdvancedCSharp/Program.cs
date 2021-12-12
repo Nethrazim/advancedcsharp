@@ -8,6 +8,7 @@ using AdvancedCSharp.Events;
 using AdvancedCSharp.Lambda;
 using AdvancedCSharp.Generics;
 using AdvancedCSharp.Threads;
+using AdvancedCSharp.Asynchronous;
 
 
 namespace AdvancedCSharp
@@ -34,13 +35,19 @@ namespace AdvancedCSharp
         ThreadSample2 ex18 = new ThreadSample2();
         ThreadSample3 ex19 = new ThreadSample3();
         ThreadSample4 ex20 = new ThreadSample4();
+        ThreadSample5 ex21 = new ThreadSample5();
+        ThreadSample6 ex22 = new ThreadSample6();
+        AsyncSample1 ex23 = new AsyncSample1();
+        AsyncSample2 ex24 = new AsyncSample2();
+        AsyncSample3 ex25 = new AsyncSample3();
+        AsyncSample4 ex26 = new AsyncSample4();
         static void Main(string[] args)
         {
             new Program().RunSamples();
             Console.ReadKey();
         }
 
-        public void RunSamples()
+        public async void RunSamples()
         {
             //ex1.Run();
             //ex2.Run();
@@ -61,7 +68,14 @@ namespace AdvancedCSharp
             //ex17.Run();
             //ex18.Run();
             //ex19.Run();
-            ex20.Run();
+            //ex20.Run();
+            //ex21.Run();
+            //ex22.Run();
+            //ex23.Run();
+            //ex24.Run();
+            //ex25.Run();
+            ex26.Run();
+            Console.WriteLine("End of RunSamples()");
         }
     }
 }

@@ -44,6 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asynchronous\AsyncSample1.cs" />
+    <Compile Include="Asynchronous\AsyncSample2.cs" />
+    <Compile Include="Asynchronous\AsyncSample3.cs" />
+    <Compile Include="Asynchronous\AsyncSample4.cs" />
     <Compile Include="Delegates\ContravarianceWithNonGenericDelegates.cs" />
     <Compile Include="Delegates\CovarianceWithNonGenericDelegate.cs" />
     <Compile Include="Delegates\DelegateSample.cs" />
@@ -69,6 +73,8 @@
     <Compile Include="Threads\ThreadSample2.cs" />
     <Compile Include="Threads\ThreadSample3.cs" />
     <Compile Include="Threads\ThreadSample4.cs" />
+    <Compile Include="Threads\ThreadSample5.cs" />
+    <Compile Include="Threads\ThreadSample6.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
